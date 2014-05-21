@@ -13,3 +13,6 @@ set splitright
 set ruler
 
 let g:pymode_rope_complete_on_dot = 0
+
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
