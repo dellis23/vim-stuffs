@@ -24,3 +24,8 @@ cmap w!! w !sudo tee > /dev/null %
 
 " Remap NERDTree's help so that backwards searching works
 let NERDTreeMapHelp='<f1>'
+
+" \s to search for word under cursor
+:nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
+
+autocmd BufNewFile,BufRead *.asm   set syntax=nasm
