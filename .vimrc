@@ -29,4 +29,10 @@ let NERDTreeMapHelp='<f1>'
 " \s to search for word under cursor
 :nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
 
+" Press F3 to use autoformat on the current buffer
+noremap <F3> :Autoformat<CR><CR>
+
 autocmd BufNewFile,BufRead *.asm   set syntax=nasm
+
+" JS Formatting options
+let g:formatprg_args_javascript = "-f - -s 2 -w 80 -b expand"
