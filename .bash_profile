@@ -4,15 +4,6 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 
 export PATH=$PATH:/Users/dan/Documents/android-sdk/sdk/platform-tools
 
-alias stew="ssh sauce@dan.dev.saucelabs.net"
-alias saucedrip="cd /Users/dan/Documents/sauce; workon sauce; drip -p3422 -s sauce@dan.dev.saucelabs.net:/home/sauce/sauce"
-alias scdev3drip="cd /Users/dan/Documents/sauce; workon sauce; drip -p3422 -s scdev3.saucelabs.net:/home/dan/sauce"
-alias scdev1drip="cd /Users/dan/Documents/sauce; workon sauce; drip -p3422 -s scdev1.saucelabs.net:/home/dan/stage/saucelabs"
-alias godrip="cd /Users/dan/Documents/go/src/github.com/dellis23/go-lwjp-server; workon sauce; drip -p3422 -s sauce@dan.dev.saucelabs.net:/home/sauce/go/src/github.com/dellis23/go-lwjp-server"
-alias cds="cd /Users/dan/Documents/sauce; workon sauce"
-alias cda="cd /Users/dan/Documents/sauce-ansible; workon sauce"
-alias smoke='git push origin $(git rev-parse --abbrev-ref HEAD):smoke-dellis -f'
-
 alias countem="find . -name '*.py' | xargs wc -l"
 alias countgo="find . -name '*.go' | xargs wc -l"
 
@@ -31,8 +22,6 @@ fi
 
 alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 
-alias velour="ssh -t -L 5050:localhost:5050 dan.dev.saucelabs.net \". ~/setenv.sh && cd ~/sauce/cloud/velour; pkill -f '^python velour\.py$'; python velour.py\""
-
 ##
 # Your previous /Users/dan/.bash_profile file was backed up as /Users/dan/.bash_profile.macports-saved_2014-10-08_at_22:48:02
 ##
@@ -41,3 +30,4 @@ alias velour="ssh -t -L 5050:localhost:5050 dan.dev.saucelabs.net \". ~/setenv.s
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
 
+source ~/.sauce_profile
