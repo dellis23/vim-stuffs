@@ -30,4 +30,6 @@ alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
 
+export NODE_PATH=/usr/local/lib/node_modules/
+
 source ~/.sauce_profile
