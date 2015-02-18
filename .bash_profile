@@ -32,4 +32,6 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
 export NODE_PATH=/usr/local/lib/node_modules/
 
+alias flushdns="sudo killall -HUP mDNSResponder"
+
 source ~/.sauce_profile
