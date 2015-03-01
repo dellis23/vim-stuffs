@@ -20,7 +20,9 @@ if [ -f ~/.git-completion.bash ]; then
     . ~/.git-completion.bash
 fi
 
-alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+if [[ "$(uname)" == 'Darwin' ]]; then
+    alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+fi
 
 ##
 # Your previous /Users/dan/.bash_profile file was backed up as /Users/dan/.bash_profile.macports-saved_2014-10-08_at_22:48:02
