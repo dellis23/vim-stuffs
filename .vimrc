@@ -35,4 +35,4 @@ noremap <F3> :Autoformat<CR><CR>
 autocmd BufNewFile,BufRead *.asm   set syntax=nasm
 
 " JS Formatting options
-let g:formatprg_args_javascript = "-f - -s 4 -w 80 -b expand"
+"let g:formatprg_args_javascript = "-f - -s 4 -w 80 -b expand"

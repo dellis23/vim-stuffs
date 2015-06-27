@@ -20,6 +20,10 @@ if [ -f ~/.git-completion.bash ]; then
     . ~/.git-completion.bash
 fi
 
+if [ -f ~/setenv.sh ]; then
+    . ~/setenv.sh
+fi
+
 if [[ "$(uname)" == 'Darwin' ]]; then
     alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 fi
@@ -37,3 +41,5 @@ export NODE_PATH=/usr/local/lib/node_modules/
 alias flushdns="sudo killall -HUP mDNSResponder"
 
 source ~/.sauce_profile
+
+alias flushdns2="sudo discoveryutil mdnsflushcache;sudo discoveryutil udnsflushcaches"
