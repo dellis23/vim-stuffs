@@ -40,6 +40,7 @@ export NODE_PATH=/usr/local/lib/node_modules/
 
 alias flushdns="sudo killall -HUP mDNSResponder"
 
-source ~/.sauce_profile
+SAUCE_PROFILE=~/.sauce_profile
+test -f $SAUCE_PROFILE && source $SAUCE_PROFILE
 
 alias flushdns2="sudo discoveryutil mdnsflushcache;sudo discoveryutil udnsflushcaches"
