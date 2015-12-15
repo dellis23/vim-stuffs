@@ -24,9 +24,9 @@ if [ -f ~/setenv.sh ]; then
     . ~/setenv.sh
 fi
 
-if [[ "$(uname)" == 'Darwin' ]]; then
-    alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
-fi
+#if [[ "$(uname)" == 'Darwin' ]]; then
+    #alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+#fi
 
 ##
 # Your previous /Users/dan/.bash_profile file was backed up as /Users/dan/.bash_profile.macports-saved_2014-10-08_at_22:48:02
@@ -44,3 +44,5 @@ SAUCE_PROFILE=~/.sauce_profile
 test -f $SAUCE_PROFILE && source $SAUCE_PROFILE
 
 alias flushdns2="sudo discoveryutil mdnsflushcache;sudo discoveryutil udnsflushcaches"
+
+alias workon="source ~/Documents/venv/bin/activate"
