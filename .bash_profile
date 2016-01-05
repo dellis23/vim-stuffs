@@ -45,4 +45,4 @@ test -f $SAUCE_PROFILE && source $SAUCE_PROFILE
 
 alias flushdns2="sudo discoveryutil mdnsflushcache;sudo discoveryutil udnsflushcaches"
 
-alias workon="source ~/Documents/venv/bin/activate"
+alias ac="source ~/Documents/venv/bin/activate"
