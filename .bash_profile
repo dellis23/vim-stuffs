@@ -46,3 +46,12 @@ test -f $SAUCE_PROFILE && source $SAUCE_PROFILE
 alias flushdns2="sudo discoveryutil mdnsflushcache;sudo discoveryutil udnsflushcaches"
 
 alias ac="source ~/Documents/venv/bin/activate"
+
+##
+# Your previous /Users/daniel.ellis/.bash_profile file was backed up as /Users/daniel.ellis/.bash_profile.macports-saved_2016-01-11_at_10:30:40
+##
+
+# MacPorts Installer addition on 2016-01-11_at_10:30:40: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
