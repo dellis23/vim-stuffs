@@ -40,8 +40,8 @@ export NODE_PATH=/usr/local/lib/node_modules/
 
 alias flushdns="sudo killall -HUP mDNSResponder"
 
-SAUCE_PROFILE=~/.sauce_profile
-test -f $SAUCE_PROFILE && source $SAUCE_PROFILE
+REDDIT_PROFILE=~/.reddit_profile
+test -f $REDDIT_PROFILE && source $REDDIT_PROFILE
 
 alias flushdns2="sudo discoveryutil mdnsflushcache;sudo discoveryutil udnsflushcaches"
 
@@ -57,6 +57,5 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
 
 if [ -f ~/.git-completion.bash ]; then
-    echo loading
     . ~/.git-completion.bash
 fi
