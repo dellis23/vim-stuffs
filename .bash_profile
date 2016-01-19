@@ -55,3 +55,8 @@ alias ac="source ~/Documents/venv/bin/activate"
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
 
+
+if [ -f ~/.git-completion.bash ]; then
+    echo loading
+    . ~/.git-completion.bash
+fi
