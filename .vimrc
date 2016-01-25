@@ -38,3 +38,5 @@ autocmd BufNewFile,BufRead *.asm   set syntax=nasm
 "let g:formatprg_args_javascript = "-f - -s 4 -w 80 -b expand"
 
 set backspace=indent,eol,start
+
+let g:pymode_trim_whitespaces = 0
