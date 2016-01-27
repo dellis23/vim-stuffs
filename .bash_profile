@@ -59,3 +59,17 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 if [ -f ~/.git-completion.bash ]; then
     . ~/.git-completion.bash
 fi
+
+mcshow() {
+    for i in {1..100}; do echo stats cachedump $i 100000 | nc localhost 11211 | grep -i $1; done
+}
+
+mcdel() {
+    for i in {1..100};
+    do
+        for key in $(echo stats cachedump $i 100000 | nc localhost 11211 | grep -i $1 | awk '{ print $2 }');
+        do
+            echo delete $key | nc localhost 11211;
+        done
+    done
+}
