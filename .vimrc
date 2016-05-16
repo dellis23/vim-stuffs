@@ -40,3 +40,5 @@ autocmd BufNewFile,BufRead *.asm   set syntax=nasm
 set backspace=indent,eol,start
 
 let g:pymode_trim_whitespaces = 0
+
+match Todo /\s\+$/
