@@ -73,3 +73,9 @@ mcdel() {
         done
     done
 }
+
+export PATH="/usr/local/terraform/bin:$PATH"
+
+validyaml() {
+    ruby -e "require 'yaml';puts YAML.load_file('$1')"
+}
