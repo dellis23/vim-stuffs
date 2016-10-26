@@ -79,3 +79,7 @@ export PATH="/usr/local/terraform/bin:$PATH"
 validyaml() {
     ruby -e "require 'yaml';puts YAML.load_file('$1')"
 }
+
+if [ "$(uname)" != "Darwin" ]; then
+    alias ls='ls --color=auto'
+fi
