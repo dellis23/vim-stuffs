@@ -42,3 +42,5 @@ set backspace=indent,eol,start
 let g:pymode_trim_whitespaces = 0
 
 match Todo /\s\+$/
+
+set foldlevel=99
