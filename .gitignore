@@ -1,2 +1,4 @@
 *.pyc
 .vim/.netrwhist
+*.sw?
+.ropeproject
