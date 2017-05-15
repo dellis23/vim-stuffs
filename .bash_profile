@@ -83,3 +83,5 @@ validyaml() {
 if [ "$(uname)" != "Darwin" ]; then
     alias ls='ls --color=auto'
 fi
+
+alias notes='cat ~/notes | grep'

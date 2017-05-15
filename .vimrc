@@ -44,3 +44,5 @@ let g:pymode_trim_whitespaces = 0
 match Todo /\s\+$/
 
 set foldlevel=99
+
+command! SP :setlocal spell! spelllang=en_us
