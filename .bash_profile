@@ -85,3 +85,6 @@ if [ "$(uname)" != "Darwin" ]; then
 fi
 
 alias notes='cat ~/notes | grep'
+
+# added by Anaconda2 4.4.0 installer
+export PATH="/Users/daniel.ellis/anaconda2/bin:$PATH"
