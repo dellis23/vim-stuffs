@@ -87,4 +87,14 @@ fi
 alias notes='cat ~/notes | grep'
 
 # added by Anaconda2 4.4.0 installer
-export PATH="/Users/daniel.ellis/anaconda2/bin:$PATH"
+#export PATH="/Users/daniel.ellis/anaconda2/bin:$PATH"
+
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
+export GOOGLE_APPLICATION_CREDENTIALS="/Users/daniel.ellis/Downloads/reddit-relevance-c3acf8091e38.json"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/daniel.ellis/google-cloud-sdk/path.bash.inc' ]; then source '/Users/daniel.ellis/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/daniel.ellis/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/daniel.ellis/google-cloud-sdk/completion.bash.inc'; fi
