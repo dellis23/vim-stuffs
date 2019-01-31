@@ -98,3 +98,5 @@ if [ -f '/Users/daniel.ellis/google-cloud-sdk/path.bash.inc' ]; then source '/Us
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/daniel.ellis/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/daniel.ellis/google-cloud-sdk/completion.bash.inc'; fi
+
+alias pkfilter="sed 's/\"//g' | sed 's/-//g' | sed 's/ //g'"
