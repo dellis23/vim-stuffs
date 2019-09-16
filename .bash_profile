@@ -1,4 +1,4 @@
-export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
+export PS1="\n\[\e[0;36m\]\$(TZ=":America/Los_Angeles" date +'%r') \[\e[1;30m\][\[\e[1;34m\]\u@\H\[\e[1;30m\]] \[\e[1;37m\]\$PWD\[\e[0;37m\] \n\$ "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
