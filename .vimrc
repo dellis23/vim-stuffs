@@ -53,3 +53,8 @@ match Todo /\s\+$/
 set foldlevel=99
 
 command! SP :setlocal spell! spelllang=en_us
+
+" Prevent ctrlp from going all the way up to the root of our repo
+let g:ctrlp_root_markers = ['METADATA']
+" Alternatively:
+"let g:ctrlp_working_path_mode = 0
