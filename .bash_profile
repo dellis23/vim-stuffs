@@ -2,6 +2,8 @@ export PS1="\n\[\e[0;36m\]\$(TZ=":America/Los_Angeles" date +'%r') \[\e[1;30m\][
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
+alias grep='grep --color=auto'
+
 alias flushdns="sudo killall -HUP mDNSResponder"
 
 alias flushdns2="sudo discoveryutil mdnsflushcache;sudo discoveryutil udnsflushcaches"
