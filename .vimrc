@@ -58,3 +58,6 @@ command! SP :setlocal spell! spelllang=en_us
 let g:ctrlp_root_markers = ['METADATA']
 " Alternatively:
 "let g:ctrlp_working_path_mode = 0
+
+set number
+set relativenumber
