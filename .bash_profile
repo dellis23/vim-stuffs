@@ -1,4 +1,4 @@
-export PS1="\n\[\e[0;36m\]\$(TZ=":America/Los_Angeles" date +'%r') \[\e[1;30m\][\[\e[1;35m\]\u\[\e[1;37m\]@\[\e[1;34m\]\H\[\e[1;30m\]] \[\e[1;37m\]\$PWD\[\e[0;37m\] \n\$ "
+export PS1="\n\[\e[0;36m\]\$(TZ=":America/Los_Angeles" date +'%r') \[\e[1;30m\][\[\e[0;37m\]\!\[\e[1;30m\]] \[\e[1;30m\][\[\e[1;35m\]\u\[\e[1;37m\]@\[\e[1;34m\]\H\[\e[1;30m\]] \[\e[1;37m\]\$PWD\[\e[0;37m\] \n\$ "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
