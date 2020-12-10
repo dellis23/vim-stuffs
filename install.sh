@@ -2,7 +2,7 @@
 READLINK=readlink
 if [ "$(uname)" = "Darwin" ]; then
     READLINK=greadlink
-    which -s $READLINK || { echo "Couldn't find an appropriate readlink.  If you're on mac, try 'brew install greadlink'." ; exit 1; }
+    which -s $READLINK || { echo "Couldn't find an appropriate readlink.  If you're on mac, try 'brew install greadlink' or 'brew install coreutils'." ; exit 1; }
 fi
 
 if [ -d "$HOME/.vim" ]; then
