@@ -24,3 +24,5 @@ fi
 alias notes='cat ~/notes | grep'
 
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
+alias r='echo -en "\e[?25h"; reset'
