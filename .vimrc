@@ -1,6 +1,11 @@
 " Load main plugins
 let word = system("echo $HOME | cut -d '/' -f4 | tr -d $'\n'")
 execute 'source /usr/share/vim/' . word . '/' . word . '.vim'
+Glug youcompleteme-google
+nnoremap <C-y>r :YcmCompleter GoToReferences<CR>
+nnoremap <C-y>d :YcmCompleter GoToDefinition<CR>
+nnoremap <C-y>g :YcmCompleter GoTo<CR>
+nnoremap <C-y>i :YcmCompleter GoToImprecise<CR>
 
 " Pathogen load
 filetype off

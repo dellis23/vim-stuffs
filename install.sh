@@ -16,4 +16,5 @@ ln -s $($READLINK -f .pdbrc) ~/.pdbrc
 ln -s $($READLINK -f .bash_profile) ~/.bash_profile
 ln -s $($READLINK -f .screenrc) ~/.screenrc
 ln -s $($READLINK -f .git-completion.bash) ~/.git-completion.bash
+ln -s $($READLINK -f .gdbinit) ~/.gdbinit
 git config --global core.excludesfile $($READLINK -f .gitignore)
