@@ -24,3 +24,17 @@ fi
 alias notes='cat ~/notes | grep'
 
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
+alias r='echo -en "\e[?25h"; reset'
+
+#
+# History
+#
+# Avoid duplicates
+HISTCONTROL=ignoredups:erasedups
+# When the shell exits, append to the history file instead of overwriting it
+shopt -s histappend
+
+# After each command, append to the history file and reread it
+#PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c;
+#history -r"
