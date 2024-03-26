@@ -1,6 +1,8 @@
 " Load main plugins
 let word = system("echo $HOME | cut -d '/' -f4 | tr -d $'\n'")
-execute 'source /usr/share/vim/' . word . '/' . word . '.vim'
+if word != ""
+    execute 'source /usr/share/vim/' . word . '/' . word . '.vim'
+endif
 
 " Pathogen load
 filetype off
